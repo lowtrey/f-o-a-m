@@ -65,6 +65,16 @@ body {
   height: 100%;
 }
 
+.secList {
+  list-style: none;
+  display:table;
+  margin: auto; 
+}
+
+.donate {
+  text-align: center;
+}
+
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
