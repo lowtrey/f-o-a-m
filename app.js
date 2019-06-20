@@ -6,23 +6,25 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
+// res.render("campgrounds/index", {
+//     campgrounds: allCampgrounds,
+//     page: 'campgrounds'
+//   });
+
 app.get('/', function(req, res){
-    res.render('home');
-});
-app.get('/about', function(req, res){
-    res.render('about');
+    res.render('home', { page: 'home' });
 });
 app.get('/outreach', function(req, res){
-    res.render('outreach');
+    res.render('outreach', { page: 'outreach' });
 });
 app.get('/events', function(req, res){
-    res.render('events');
+    res.render('events', { page: 'events' });
 });
 app.get('/donate', function(req, res){
-    res.render('donate');
+    res.render('donate', { page: 'donate' });
 });
 app.get('/contact', function(req, res){
-    res.render('contact');
+    res.render('contact', { page: 'contact' });
 });
 
 
